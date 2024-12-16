@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW5: Analyzing Patterns in Fake News</title>
+    <link rel="stylesheet" href="shailyro.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Examining Fake News: Is It Sensationalized or Balanced?</h1>
+        <h2>Name: Shaily Roy | ASURITE: shailyro | Email: shailro@asu.edu</h2>
+    </header>
+
+    <div class="grabber">
+        <img src="data/trump.png" alt="Controversial Topic: Fake News Analysis">
+    </div>
+
+    <div class="introduction">
+  
+        <p>
+            This project examines the controversial nature of fake news by analyzing its focus and breadth of coverage. Using Kaggle's <a href="https://www.kaggle.com/c/fake-news/data" target="_blank">Fake News Dataset</a>, it presents two conflicting perspectives: <strong>Perspective A</strong> argues that fake news deliberately targets emotionally charged and sensational topics, aiming to provoke reactions and amplify engagement. <strong>Perspective B</strong>, however, counters this claim by suggesting that fake news resembles true news in its coverage, spanning a wide range of topics.
+        </p>
+        <p>
+            These opposing viewpoints highlight the broader societal debate on the influence of fake news. While one perspective portrays it as manipulative and divisive, the other implies it shares similarities with credible reporting. By visualizing these contrasting narratives, the project promotes critical reflection on how fake news shapes public discourse, fosters division, and erodes trust in media.
+        </p>
+        
+            
+    </div>
+
+    <div class="visualizations">
+
+        <div id="left-panel">
+            <h3>Perspective A: Sensational Topics Drive Fake News Engagement</h3>
+            <div id="fake-news-word-cloud"></div>
+            <div class="explanation">
+                <p>
+                    The bar chart demonstrates that fake news tends to focus disproportionately on emotionally charged or sensational topics such as "Government" and "Politics," which dominate the dataset. This perspective supports the idea that fake news leverages these areas to spark strong emotional reactions, maximize engagement, and drive misinformation spread. The clear disparity in coverage between these leading categories and others like "General News" reinforces the argument for a targeted sensationalism strategy.
+                </p>
+            </div>
+        </div>
+
+        <div id="right-panel">
+            <h3>Perspective B: Fake News Mimics Balanced Coverage Across Topics</h3>
+            <div id="true-news-word-cloud"></div>
+            <div class="explanation">
+                <p>
+                    The pie chart counters the claim of targeted sensationalism by highlighting the broad distribution of fake news across multiple topics. While certain categories like "Politics" and "General News" are prominent, other topics such as "U.S. News" and "Middle-East" are also covered. 
+                    Compared to true news, fake news demonstrates a similar distribution between political and other topics, indicating that it does not rely solely on sensationalism but instead reflects a broader range of coverage similar to true news reporting.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Visualization project by Shaily Roy. Dataset sourced from Kaggle's Fake News Dataset. First image sourced from <a href="https://news.miami.edu/stories/2018/12/what-is-fake-news.html" target="_blank">news.miami.edu</a>.</p>
+    </footer>
+
+    <script src="shailyro.js"></script>
+</body>
+</html>

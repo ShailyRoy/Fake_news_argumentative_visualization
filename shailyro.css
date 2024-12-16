@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #400000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-top: 5px;
+    color: #ffd700;
+}
+
+.grabber img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.introduction {
+    padding: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+.introduction h3 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #003366;
+}
+
+.introduction ul {
+    list-style-type: disc;
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+
+.introduction li {
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.introduction p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.visualizations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#left-panel, #right-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 45%;
+}
+
+#left-panel h3, #right-panel h3 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.explanation {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-left: 5px solid #003366;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+
+.explanation p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .visualizations {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #left-panel, #right-panel {
+        min-width: 100%;
+    }
+
+}
